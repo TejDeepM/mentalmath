@@ -1,0 +1,26 @@
+
+#questionText {
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+    position: fixed;
+    top: 30%;
+    left: 40%;
+    color: white;
+}
+
+#answerInput {
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    position: fixed;
+    top: 45%;
+    left: 35%;
+    text-align: center;
+    border-color: white;
+    background-color: rgb(40, 40, 40);
+    color: white;
+}
+
+body {
+    background-color: black;
+}
