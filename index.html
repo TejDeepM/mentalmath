@@ -4,7 +4,21 @@
     <body>
 
         <p id = "questionText">05 + 03</p>
-        <input placeholder = "Answer" id = "answerInput" type = "number", onkeydown = buttonPressed()>
+        <input placeholder = "Answer" id = "answerInput" type = "number">
+
+        <input type = "checkbox" id = "addCheckbox" value = "add">
+        <label for = "addCheckbox" id = "addCheckboxLabel">Addition</label>
+
+        <input type = "checkbox" id = "subtractCheckbox" name = "subtractCheckbox" value = "subtract">
+        <label for = "subtractCheckbox" id = "subtractCheckboxLabel">Subtraction</label>
+
+        <input type = "checkbox" id = "multiplicationCheckbox" name = "multiplicationCheckbox" value = "multiply">
+        <label for = "multiplicationCheckbox" id = "multiplicationCheckboxLabel">Multiplication</label>
+
+        <input type = "checkbox" id = "divisionCheckbox" name = "divisionCheckbox" value = "divide">
+        <label for = "divisionCheckbox" id = "divisionCheckboxLabel">Division</label>
+
+        <p id = "decimalNote">Note: For division, enter values correct upto 2 decimal places.</p>
 
     </body>
 
@@ -12,7 +26,6 @@
 
         <script src = "mentalmathJS.js"></script>
         <link rel = "stylesheet" href = "styles.css">
-
 
     </head>
 

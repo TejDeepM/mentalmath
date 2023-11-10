@@ -3,7 +3,7 @@
     font-size: 50px;
     font-family: 'Courier New', Courier, monospace;
     font-weight: 700;
-    position: fixed;
+    position: absolute;
     top: 30%;
     left: 40%;
     color: white;
@@ -12,7 +12,7 @@
 #answerInput {
     font-size: 30px;
     font-family: 'Courier New', Courier, monospace;
-    position: fixed;
+    position: absolute;
     top: 45%;
     left: 35%;
     text-align: center;
@@ -20,6 +20,93 @@
     background-color: rgb(40, 40, 40);
     color: white;
 }
+
+#addCheckbox {
+    font-size: 20px;
+    font-family:'Courier New', Courier, monospace;
+    position: absolute;
+    top: 12%;
+    left: 35%;
+    color: white;
+}
+
+#addCheckboxLabel {
+    font-size: 20px;
+    font-family:'Courier New', Courier, monospace;
+    position: absolute;
+    top: 11.8%;
+    left: 35%;
+    margin-left: 25px;
+    color: white;
+}
+
+#subtractCheckbox {
+    font-size: 20px;
+    font-family:'Courier New', Courier, monospace;
+    position: absolute;
+    top: 16%;
+    left: 35%;
+    color: white;
+}
+
+#subtractCheckboxLabel {
+    font-size: 20px;
+    font-family:'Courier New', Courier, monospace;
+    position: absolute;
+    top: 15.8%;
+    left: 35%;
+    margin-left: 25px;
+    color: white;
+}
+
+#multiplicationCheckbox {
+    font-size: 20px;
+    font-family:'Courier New', Courier, monospace;
+    position: absolute;
+    top: 12%;
+    left: 60%;
+    color: white;
+}
+
+#multiplicationCheckboxLabel {
+    font-size: 20px;
+    font-family:'Courier New', Courier, monospace;
+    position: absolute;
+    top: 11.8%;
+    left: 60%;
+    margin-left: 25px;
+    color: white;
+}
+
+#divisionCheckbox {
+    font-size: 20px;
+    font-family:'Courier New', Courier, monospace;
+    position: absolute;
+    top: 16%;
+    left: 60%;
+    color: white;
+}
+
+#divisionCheckboxLabel {
+    font-size: 20px;
+    font-family:'Courier New', Courier, monospace;
+    position: absolute;
+    top: 15.8%;
+    left: 60%;
+    margin-left: 25px;
+    color: white;
+}
+
+#decimalNote {
+    font-size: 15px;
+    font-family:'Courier New', Courier, monospace;
+    position: absolute;
+    top: 80%;
+    left: 30%;
+    color: white;
+}
+
+
 
 body {
     background-color: black;
