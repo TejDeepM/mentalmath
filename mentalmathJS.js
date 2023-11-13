@@ -4,7 +4,21 @@ var num2 = Number((Math.random()*1000).toFixed());
 document.getElementById("questionText").innerHTML = num1.toString() + " + " + num2.toString();
 document.getElementById("addCheckbox").checked = true;
 
+difficulty = getElementById("difficultySelection").value;
+console.log(difficulty);
+
 actualAnswer = num1+num2;
+
+multiplier = 1;
+if (difficulty == "easy") {
+    multiplier = 1;
+} else if (difficult == "medium") {
+    multiplier = 5;
+} else if (difficulty == "hard") {
+    multiplier = 8;
+} else if (difficulty == "impossible") {
+    multiplier = 13;
+}
 
 addbox = document.getElementById("addCheckbox")
 subtractbox = document.getElementById("subtractCheckbox")
@@ -71,6 +85,9 @@ function typed() {
             document.getElementById("questionText").innerHTML = num1.toString() + " / " + num2.toString();
             actualAnswer = (num1 / num2).toFixed(2);
         }
+
+        num1 *= multiplier;
+        num2 *= multiplier;
     }
 
     if (answer == actualAnswer) {
