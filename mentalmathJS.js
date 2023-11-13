@@ -4,20 +4,26 @@ var num2 = Number((Math.random()*1000).toFixed());
 document.getElementById("questionText").innerHTML = num1.toString() + " + " + num2.toString();
 document.getElementById("addCheckbox").checked = true;
 
-difficulty = getElementById("difficultySelection").value;
-console.log(difficulty);
+var difficulty = "easy"
 
 actualAnswer = num1+num2;
 
-multiplier = 1;
-if (difficulty == "easy") {
-    multiplier = 1;
-} else if (difficult == "medium") {
-    multiplier = 5;
-} else if (difficulty == "hard") {
-    multiplier = 8;
-} else if (difficulty == "impossible") {
-    multiplier = 13;
+var multiplier = 1;
+
+function updateMultiplier() {
+    difficulty = document.getElementById("difficultySelection").value;
+
+    if (difficulty == "easy") {
+        multiplier = 1;
+    } else if (difficulty == "medium") {
+        multiplier = 5;
+    } else if (difficulty == "hard") {
+        multiplier = 8;
+    } else if (difficulty == "impossible") {
+        multiplier = 13;
+    }
+
+    console.log(multiplier)
 }
 
 addbox = document.getElementById("addCheckbox")
@@ -62,32 +68,30 @@ function typed() {
 
     function generateNumbers() {
         if (operation == "add") {
-            num1 = Number((Math.random()*1000).toFixed());
-            num2 = Number((Math.random()*1000).toFixed());
+            num1 = Number((Math.random()*1000*multiplier).toFixed());
+            num2 = Number((Math.random()*1000*multiplier).toFixed());
             document.getElementById("questionText").innerHTML = num1.toString() + " + " + num2.toString();
             actualAnswer = (num1 + num2).toFixed(2);
         }
         else if (operation == "subtract") {
-            num1 = Number((Math.random()*1000).toFixed());
-            num2 = Number((Math.random()*1000).toFixed());
+            num1 = Number((Math.random()*1000*multiplier).toFixed());
+            num2 = Number((Math.random()*1000*multiplier).toFixed());
             document.getElementById("questionText").innerHTML = num1.toString() + " - " + num2.toString();
             actualAnswer = (num1 - num2).toFixed(2);
         }
         else if (operation == "multiply") {
-            num1 = Number((Math.random()*100).toFixed());
-            num2 = Number((Math.random()*100).toFixed());
+            num1 = Number((Math.random()*100*multiplier).toFixed());
+            num2 = Number((Math.random()*100*multiplier).toFixed());
             document.getElementById("questionText").innerHTML = num1.toString() + " x " + num2.toString();
             actualAnswer = (num1 * num2).toFixed(2);
         }
         else if (operation == "divide") {
-            num1 = Number((Math.random()*1000).toFixed());
-            num2 = Number((Math.random()*10).toFixed());
+            num1 = Number((Math.random()*1000*multiplier).toFixed());
+            num2 = Number((Math.random()*10*multiplier).toFixed());
             document.getElementById("questionText").innerHTML = num1.toString() + " / " + num2.toString();
+            answer = parseFloat(answer)
             actualAnswer = (num1 / num2).toFixed(2);
         }
-
-        num1 *= multiplier;
-        num2 *= multiplier;
     }
 
     if (answer == actualAnswer) {
@@ -106,3 +110,4 @@ function typed() {
 }
 
 document.getElementById("answerInput").addEventListener("change", typed)
+document.getElementById("difficultySelection").addEventListener("change", updateMultiplier)

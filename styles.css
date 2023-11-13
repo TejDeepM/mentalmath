@@ -1,109 +1,126 @@
 
 #questionText {
-    font-size: 50px;
+    font-size: 3.43vw;
     font-family: 'Courier New', Courier, monospace;
     font-weight: 700;
     position: absolute;
-    top: 30%;
+    top: 40%;
     left: 40%;
     color: white;
 }
 
 #answerInput {
-    font-size: 30px;
+    font-size: 2.05vw;
     font-family: 'Courier New', Courier, monospace;
     position: absolute;
-    top: 45%;
+    top: 55%;
     left: 35%;
     text-align: center;
     border-color: white;
     background-color: rgb(40, 40, 40);
     color: white;
+    border-radius: 10px;
 }
 
 #addCheckbox {
-    font-size: 20px;
     font-family:'Courier New', Courier, monospace;
     position: absolute;
-    top: 12%;
+    top: 22%;
     left: 35%;
+    width: 1vw;
+    height: 1vw;
     color: white;
 }
 
 #addCheckboxLabel {
-    font-size: 20px;
+    font-size: 1.37vw;
     font-family:'Courier New', Courier, monospace;
     position: absolute;
-    top: 11.8%;
+    top: 21.8%;
     left: 35%;
     margin-left: 25px;
     color: white;
 }
 
 #subtractCheckbox {
-    font-size: 20px;
     font-family:'Courier New', Courier, monospace;
     position: absolute;
-    top: 16%;
+    top: 26%;
     left: 35%;
+    width: 1vw;
+    height: 1vw;
     color: white;
 }
 
 #subtractCheckboxLabel {
-    font-size: 20px;
+    font-size: 1.37vw;
     font-family:'Courier New', Courier, monospace;
     position: absolute;
-    top: 15.8%;
+    top: 25.8%;
     left: 35%;
     margin-left: 25px;
     color: white;
 }
 
 #multiplicationCheckbox {
-    font-size: 20px;
     font-family:'Courier New', Courier, monospace;
     position: absolute;
-    top: 12%;
+    top: 22%;
     left: 60%;
+    width: 1vw;
+    height: 1vw;
     color: white;
 }
 
 #multiplicationCheckboxLabel {
-    font-size: 20px;
+    font-size: 1.37vw;
     font-family:'Courier New', Courier, monospace;
     position: absolute;
-    top: 11.8%;
+    top: 21.8%;
     left: 60%;
     margin-left: 25px;
     color: white;
 }
 
 #divisionCheckbox {
-    font-size: 20px;
     font-family:'Courier New', Courier, monospace;
     position: absolute;
-    top: 16%;
+    top: 26%;
     left: 60%;
     color: white;
+    width: 1vw;
+    height: 1vw;
 }
 
 #divisionCheckboxLabel {
-    font-size: 20px;
+    font-size: 1.37vw;
     font-family:'Courier New', Courier, monospace;
     position: absolute;
-    top: 15.8%;
+    top: 25.8%;
     left: 60%;
     margin-left: 25px;
     color: white;
 }
 
 #decimalNote {
-    font-size: 15px;
+    font-size: 1.02vw;
     font-family:'Courier New', Courier, monospace;
     position: absolute;
-    top: 80%;
+    top: 90%;
     left: 30%;
     color: white;
+}
+
+#difficultySelection {
+    font-size: 1.37vw;
+    font-family:'Courier New', Courier, monospace;
+    position: absolute;
+    top: 10%;
+    left: 46%;
+    color: white;
+    font-weight: 600;
+    background-color: rgb(40, 40, 40);
+    border-radius: 10px;
 }
 
 
