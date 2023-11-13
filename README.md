@@ -1,1 +1,2 @@
-Mental math game
+Version 1.0
+First release
