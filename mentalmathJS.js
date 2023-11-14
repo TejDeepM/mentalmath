@@ -48,14 +48,14 @@ function generateNumbers() {
         actualAnswer = (num1 - num2).toFixed(2);
     }
     else if (operation == "multiply") {
-        num1 = Number((Math.random()*100*multiplier).toFixed());
-        num2 = Number((Math.random()*100*multiplier).toFixed());
+        num1 = Number((Math.random()*50*multiplier).toFixed());
+        num2 = Number((Math.random()*50*multiplier).toFixed());
         document.getElementById("questionText").innerHTML = num1.toString() + " x " + num2.toString();
         actualAnswer = (num1 * num2).toFixed(2);
     }
     else if (operation == "divide") {
-        num1 = Number((Math.random()*1000*multiplier).toFixed());
-        num2 = Number((Math.random()*10*multiplier).toFixed());
+        num1 = Number((Math.random()*100*multiplier).toFixed());
+        num2 = Number((Math.random()*3*multiplier).toFixed());
         document.getElementById("questionText").innerHTML = num1.toString() + " / " + num2.toString();
         answer = parseFloat(answer)
         actualAnswer = (num1 / num2).toFixed(2);
