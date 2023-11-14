@@ -1,2 +1,5 @@
-Version 1.0
-First release
+Version 1.2
+
+Changes:
+- Optimized code
+- Question updates when settings changes
